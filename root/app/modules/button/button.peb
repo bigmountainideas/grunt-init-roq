@@ -1,0 +1,49 @@
+{
+  "global" : false,
+  
+  "properties" : [{
+    "name" : "name",
+    "type" : "text",
+    "label" : "Website Name",
+    "validator" : "parsley validator type",
+    "required" : false
+  },
+
+  {
+    "name" : "title",
+    "type" : "text",
+    "label" : "Page title"
+  },
+
+  {
+    "name" : "description",
+    "type" : "text",
+    "label" : "Page description"
+  },
+
+  {  
+    "type" : "image",
+    "name" : "image",
+    "label" : "Page icon"
+  },
+
+  {  
+    "type" : "list",
+    "label" : "Product Features",
+    "items" : [
+    
+      {  
+        "name" : "image",
+        "type" : "image",
+        "label" : "Feature Image"
+      },
+      
+      {  
+        "name" : "title",
+        "type" : "text",
+        "label" : "Feature title"
+      }
+    
+    ]
+  }]
+}

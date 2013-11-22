@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    {{module "seo" name="seo"}}
+
+    {{{enqueue "/common/less/normalize.css"  queue="styles"}}}
+    {{{enqueue "/common/less/bootstrap.less" queue="styles"}}}
+    {{{enqueue "/common/less/main.less"      queue="styles"}}}
+    {{{process_queue "styles"}}}
+    
+    {{process_queue "/js/vendor/modernizr-2.6.2.min.js" "/js/vendor/analytics.js" queue="hscripts"}}
+  </head>
+  <body class="template-{{data.template}}">
+    <!--[if lt IE 8]>
+        <p class="browsehappy">{{i18n.errors.updateBrowser}}</p>
+    <![endif]-->
+
+    <div id="contentWrapper">
+
+      {{{module "page_heading" name="heading"}}}
+      {{{module "article, multi_column_content" name="content"}}}
+      {{{module "button" name="content_button"}}}
+
+      {{{include "/static.html"}}}
+    </div>
+    
+    {{{enqueue "/common/js/vendor/jquery.min.js" queue="scripts"}}}
+    {{{enqueue "/common/js/vendor/bootstrap.min.js" queue="scripts"}}}
+    {{{process_queue "scripts"}}}
+
+
+    {{{debug}}}
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "_id" : 25234,
+  "uri" : "/index",
+  "modified" : 1231234522,
+  "template" : "page",
+  
+  "modules" : {
+    "seo" : {
+      "name" : "seo",
+      "module" : "seo",
+      "locals" : {
+        "title" : "Test Home Page",
+        "description" : "Lorem ipsum dolor sit ameet.",
+        "name" : "My Website",
+        "image" : "http://files.mywebapp.com.s3.amazons3.com/2013/11/01/site-og-icon.png"
+      }
+    },
+    "heading" : {
+      "name" : "page_heading",
+      "module" : "page_heading",
+      "locals" : {
+        "title" : "Test Page"
+      }
+    }
+  }
+}

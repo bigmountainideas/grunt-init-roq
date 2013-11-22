@@ -1,0 +1,9 @@
+{
+  "name": "myroqapp",
+  "description": "hello world roq test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "roq": "0.x"
+  }
+}
